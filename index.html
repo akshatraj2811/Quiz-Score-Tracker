@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Score Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-card">
+        <h1 class="main-title">IQ & General Knowledge Test</h1>
+
+        <div class="progress" id="progressText">Question 1 of 10</div>
+
+        <div id="quiz-box">
+            <h2 id="questionText">Loading question...</h2>
+
+            <div class="options-grid">
+                <button onclick="selectOption(1)" id="btn1" class="option-btn">Option 1</button>
+                <button onclick="selectOption(2)" id="btn2" class="option-btn">Option 2</button>
+                <button onclick="selectOption(3)" id="btn3" class="option-btn">Option 3</button>
+                <button onclick="selectOption(4)" id="btn4" class="option-btn">Option 4</button>
+            </div>
+
+            <div class="nav-flex">
+                <button onclick="goBackward()" id="prevBtn" class="nav-btn">◀ Prev</button>
+                <button onclick="goForward()" id="nextBtn" class="nav-btn">Next ▶</button>
+            </div>
+        </div>
+
+        <div id="result-box" style="display: none;">
+            <div class="trophy">🎉</div>
+            <h2>Quiz Completed!</h2>
+            <p class="final-score" id="scoreText">You scored 0 out of 10</p>
+            <button onclick="restartQuiz()" class="action-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
